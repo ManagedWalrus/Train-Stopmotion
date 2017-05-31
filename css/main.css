@@ -117,7 +117,7 @@ header span {
 	}
 	.sidenav {
 		margin: 0;
-		padding: 50px 0 0 0;
+		padding: 100px 0 0 0;
 		height: 100%;
 		min-width: 0;
 		position: fixed;
@@ -134,7 +134,7 @@ header span {
 	.sidenav a:first-child{
 		display: block;
 		font-size: 100px;
-		margin-top: -40px;
+		margin-top: -10px;
 	}
 	.sidenav a {
 		padding: 8px 8px 8px 32px;
