@@ -15,17 +15,19 @@ body {
 	background-color: #34495e;
 	/*#ff6f22*/
 }
-header{
+
+header {
 	text-align: center;
 	color: white;
 	background-color: #607D8B;
 }
 
-header img{
+header img {
 	margin-top: 20px;
 }
 
-.triangle, .triangle2{
+.triangle,
+.triangle2 {
 	height: 0;
 	width: 0;
 	margin: auto;
@@ -34,71 +36,127 @@ header img{
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 }
-.triangle2{
+
+.triangle2 {
 	z-index: 1;
 	margin-left: calc(50% - 30px);
 	position: absolute;
 	border-top: 30px solid #34495e;
+	margin-top: -5px;
 }
-.video{
+
+.video {
 	text-align: center;
 	color: white;
 	background-color: #607D8B;
 	padding-top: 50px;
 	padding-bottom: 20px;
+	margin-top: -3px;
 }
-iframe{
+
+iframe {
 	width: 560px;
 	height: 315px;
 }
-.navbar{
-	margin-left: calc(50% - 502px);
-	display: inline-block;
-	margin-bottom: -10px;
+
+header span {
+	float: left;
+	font-size: 80px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: -70px;
+	display: none;
 }
-.navbar td a{
-	color: white;
-	text-decoration: none;
-}
-.navbar td{
-	list-style-type: none;
-	display: inline-block;
-	padding: 0 100px;
-	width: 250px;
-	margin-top: -70px;
-}
-.navbar tr{
-	margin: 0;
-	padding: 0;
+.sidenav a:first-child{
+	display: none;
 }
 
-@media only screen and (max-device-width: 667px) 
-    and (-webkit-device-pixel-ratio: 2)
-{ 
-	body{
+.sidenav a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+.sidenav{
+	display: inline-block;
+	margin-top: -70px;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	text-align: justify;
+    min-width: calc(100% - 50px);
+}
+.sidenav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+	body {
 		font-size: 25px;
 	}
-	iframe{
+	header img {
+		margin-left: auto;
+	}
+	header span{
+		display: block;
+	}
+	iframe {
 		width: 900px;
 		height: calc(900px * 0.5625);
 	}
-	.navbar td{
-		width: 200px;
-		padding: 0 10px;
-		text-align: center;
-	}
-	.navbar table{
-		margin-left: calc(50% - 300px);
-		width: 100%;
-	}
-	
-	.triangle, .triangle2{
+	.triangle,
+	.triangle2 {
 		margin-top: -2px;
+		z-index: 0;
+		display: none;
 	}
-	
+	.triangle {
+		position: relative;
+	}
+	.sidenav {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		min-width: 0;
+		font-size: 100px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #34495e;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		text-align: center;
+		display: none;
+	}
+	.sidenav a:first-child{
+		display: block;
+	}
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: white;
+		display: block;
+		transition: 0.3s;
+	}
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+	.closebtn{
+		font-size: 100px;
+	}
 }
-
-
 
 
 /**************FOR MAKING INNER ROUNDED CORNER
