@@ -94,7 +94,7 @@ header span {
 
 @media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
 	body {
-		font-size: 25px;
+		font-size: 55px;
 	}
 	header img {
 		margin-left: auto;
